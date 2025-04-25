@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SqueakyCleanTest" tests="12" skipped="0" failures="7" errors="0" timestamp="2025-04-25T13:02:58" hostname="ubuntu" time="0.065">
+  <properties/>
+  <testcase name="The clean method converts leetspeak to normal text with spaces and special characters" classname="SqueakyCleanTest" time="0.048">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;leetspeak_is_fun&quot;&#10; but was: &quot;¡1337sp34k_is_fun!&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;leetspeak_is_fun&quot;
+ but was: &quot;¡1337sp34k_is_fun!&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.leetspeak_to_normal_text_with_spaces_and_special_characters(SqueakyCleanTest.java:76)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method converts leetspeak to normal text after replacing numbers with chars" classname="SqueakyCleanTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;Hello_World&quot;&#10; but was: &quot;H3ll0_W0rld&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;Hello_World&quot;
+ but was: &quot;H3ll0_W0rld&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.leetspeak_to_normal_text(SqueakyCleanTest.java:69)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method replaces whitespaces with underscores in the middle of the string" classname="SqueakyCleanTest" time="0.001"/>
+  <testcase name="The clean method returns the same string when invoked on a string of three letters" classname="SqueakyCleanTest" time="0.0"/>
+  <testcase name="The clean method returns empty string when invoked on empty string" classname="SqueakyCleanTest" time="0.0"/>
+  <testcase name="The clean method returns a string in camel case after removing a dash and replaces a whitespace" classname="SqueakyCleanTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;aC_&quot;&#10; but was: &quot;a-C_&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;aC_&quot;
+ but was: &quot;a-C_&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.kebab_to_camel_case_and_number(SqueakyCleanTest.java:55)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method returns a string in camel case and replaces leading and trailing whitespaces" classname="SqueakyCleanTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;_helloWorld_&quot;&#10; but was: &quot;_hello-world_&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;_helloWorld_&quot;
+ but was: &quot;_hello-world_&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.kebab_to_camel_case_and_spaces(SqueakyCleanTest.java:62)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method replaces leading and trailing whitespaces with underscores" classname="SqueakyCleanTest" time="0.0"/>
+  <testcase name="The clean method removes all characters that are not letters" classname="SqueakyCleanTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;ab&quot;&#10; but was: &quot;a$#.b&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;ab&quot;
+ but was: &quot;a$#.b&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.special_characters(SqueakyCleanTest.java:83)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method converts kebab to camel case after removing a dash" classname="SqueakyCleanTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;aBc&quot;&#10; but was: &quot;a-bc&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;aBc&quot;
+ but was: &quot;a-bc&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.kebab_to_camel_case(SqueakyCleanTest.java:48)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method removes all characters that are not letters and replaces spaces" classname="SqueakyCleanTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;hello_world_&quot;&#10; but was: &quot;¡hello_world!._&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;hello_world_&quot;
+ but was: &quot;¡hello_world!._&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//SqueakyCleanTest.special_characters_and_spaces(SqueakyCleanTest.java:90)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The clean method returns the same string when invoked on a single letter string" classname="SqueakyCleanTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
