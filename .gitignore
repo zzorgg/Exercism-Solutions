@@ -1,1 +1,8 @@
 **/build/
+
+# Ignore everything inside java/* (each exercise)
+java/*/*
+
+# But NOT these files/folders inside each exercise
+!java/*/*.md
+!java/*/src/
